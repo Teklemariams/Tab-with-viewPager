@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".Attraction">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@android:color/white"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:text="Axsum Oblisk"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginHorizontal="3dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/axum" />
+
+        <TextView
+            android:id="@+id/attraction_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@android:color/white"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="32dp"
+            android:text="Axum or Aksum is the site of the historic capital of the Kingdom of Aksum. It is now a tourist town[1][2][3] with a population of 66,800 residents (as of 2015).[4]
+
+The Kingdom of Axum was a naval and trading power that ruled the region from about 400 BCE into the 10th century. In 1980, UNESCO added Axum's archaeological sites to its list of World Heritage Sites due to their historic value. "
+            android:textColor="#000"
+            android:textSize="18sp" />
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/attraction_tab_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            app:tabMode="scrollable"
+            app:tabSelectedTextColor="#6cd13e"
+            app:tabTextColor="#aaa"
+            app:tabIndicatorColor="#6cd13e"
+            >
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/tabItem1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Visit" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/tabItem2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Weather" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/tabItem3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Eat" />
+            <android.support.design.widget.TabItem
+                android:id="@+id/tabItem4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shop" />
+            <android.support.design.widget.TabItem
+                android:id="@+id/tabItem5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Get Area" />
+
+
+        </android.support.design.widget.TabLayout>
+        <android.support.v4.view.ViewPager
+            android:id="@+id/attraction_view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"/>
+
+
+    </LinearLayout>
+</ScrollView>
